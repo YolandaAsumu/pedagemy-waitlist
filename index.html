@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Watch Pedagemy at Africa Skills Week and join the early access waitlist.">
+<title>Pedagemy at Africa Skills Week</title>
+<style>
+*{box-sizing:border-box}body{margin:0}
+/* Layout: a single dark stage; the video first, then the four waitlist buttons */
+:root{
+  --bg:#0b1a45; --fg:#ffffff; --muted:#b7c8f5; --red:#de292e; --blue:#2860e6; --card:#13265e; --line:#25397a;
+  --font:"Poppins","Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color-scheme:dark;
+}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding:28px 16px 48px;display:grid;gap:22px}
+.brand{font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0}
+h1{margin:4px 0 0;font-size:clamp(24px,5vw,34px);line-height:1.2;text-wrap:balance}
+h1 span{color:var(--red)}
+.video{width:min(100%,620px);margin:0 auto;aspect-ratio:16/9;background:#000;border-radius:14px;display:block;object-fit:cover}
+.sound{margin:0;color:var(--muted);font-size:14px}
+h2{margin:6px 0 0;font-size:20px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:520px){.grid{grid-template-columns:1fr}.video{width:100%;max-width:100%;aspect-ratio:16/9}}
+.wl{display:grid;gap:4px;padding:16px 18px;border-radius:12px;background:var(--card);border:1.5px solid var(--line);color:var(--fg);text-decoration:none}
+.wl strong{font-size:17px}
+.wl em{font-style:normal;color:var(--muted);font-size:14px}
+.wl .go{margin-top:6px;font-weight:700;font-size:15px}
+.wl.r .go{color:#ff6b70}.wl.b .go{color:#8fb0ff}
+.wl:hover,.wl:focus-visible{border-color:var(--fg);outline:none}
+.foot{color:var(--muted);font-size:14px;margin:0}
+.foot a{color:var(--fg)}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+</head>
+<body>
+<main class="wrap">
+  <div>
+    <p class="brand">Pedagemy</p>
+    <h1>The Pan-African training ecosystem. <span>Join the early access waitlist.</span></h1>
+  </div>
+
+  <video class="video" id="vid" src="pedagemy-video.mp4" poster="poster.jpg" controls playsinline preload="metadata"></video>
+  <p class="sound">Press play and turn your sound on. 1 min 38 s.</p>
+
+  <h2>Choose your waitlist</h2>
+  <div class="grid">
+    <a target="_blank" rel="noopener" class="wl b" href="https://survey.zohopublic.com/zs/T3jU7g"><strong>Institutions</strong><em>Take your training programmes digital and reach more learners.</em><span class="go">Join the Institutional Waitlist &rarr;</span></a>
+    <a target="_blank" rel="noopener" class="wl r" href="https://survey.zohopublic.com/zs/k6jb7K"><strong>Corporates</strong><em>Take staff training digital and upskill your teams at scale.</em><span class="go">Join the Corporate Waitlist &rarr;</span></a>
+    <a target="_blank" rel="noopener" class="wl r" href="https://survey.zohopublic.com/zs/kbz1FX"><strong>Governments</strong><em>Take workforce programmes digital and deliver them nationwide.</em><span class="go">Join the Government Waitlist &rarr;</span></a>
+    <a target="_blank" rel="noopener" class="wl b" href="https://survey.zohopublic.com/zs/6mj1iG"><strong>Learners</strong><em>Access quality training anytime, anywhere, and grow your career.</em><span class="go">Join the Learner Waitlist &rarr;</span></a>
+  </div>
+
+  <p class="foot">One platform. Every learner. All of Africa. &middot; <a href="https://pedagemy.com">pedagemy.com</a></p>
+</main>
+</body>
+</html>
